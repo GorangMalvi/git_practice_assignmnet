@@ -2,8 +2,8 @@ var num = 10;
 function identifyPrime(num) {
     
     let count = 0;
-    for (let i =0; i<=num; i++){
-        if(num%1===1){
+    for (let i =1; i<=num; i++){
+        if(num%i===0){
             count++
         }
     }
@@ -14,4 +14,5 @@ function identifyPrime(num) {
         console.log("No")
     }
 }
+identifyPrime(num);
 
